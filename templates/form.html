@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Heart Logix</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='form.css')}}">
+
+</head>
+<body>
+    <nav>
+        Heart Logix
+    </nav>
+    <div class="lefty">
+        <img src="{{ user_image }}" alt="doc" >
+    </div>
+    <div class="form" >
+        <form action="{{ url_for('result') }}" method="POST">
+            <!-- <label>Name</label>
+            <input type="text" required> -->
+            <label>Age</label>
+            <input type="text" id="age"name="age" placeholder="enter age " required>
+
+            <label>Sex</label><br>
+            male<input style="width: 21px;" type="radio" id="sex"name="sex"value= "1"placeholder="enter age " required>
+            female<input style="width: 21px;" type="radio" id="sex"name="sex"value="0" placeholder="enter age " required>
+            <br>
+            <label>Creatinine Phosphokinase</label>
+            <input type="text" id="creatinine_Phosphokinase"name="creatinine_phosphokinase" placeholder=" (mcg/L)" required>
+
+            <label>Ejection Fraction</label>
+            <input type="text" id="ejection_fraction"name="ejection_fraction" placeholder="eg 30 or 40" required>
+
+            <label>Platelets</label>
+            <input type="text" id="platelets"name="platelets" placeholder=" eg 265000.00" required>
+
+            <label>Serum Creatinine</label>
+            <input type="text" id="serum_creatinine"name="serum_creatinine" placeholder=" eg 1.35 mg" required>
+
+            <label>Serum Sodium</label>
+            <input type="text" id="serum_sodium"name="serum_sodium" placeholder="eg 0.74 mg/dL" required>
+
+            <label>Time</label>
+            <input type="text" id="time"name="time" placeholder="eg 1 or 278" required><br>
+            <input type="submit" value="Submit">
+                   <b>Predicion:</b> 
+        </form>
+    </div>
+</body>
+</html>

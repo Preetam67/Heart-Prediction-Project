@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Logix</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+
+
+</head>
+<body>
+    <nav>
+        Heart Logix
+    </nav>
+    <div class="flex">
+        <div class="txt">
+            <p>“Start taking care of your heart before it falls apart.”</p>
+
+
+            <a href="{{ url_for('form') }}"><button>Check Now</button></a>
+        </div>
+        <div class="img">
+            <img  src="static/image/doc.svg" alt="medical symbol">
+        </div>
+    </div>
+</body>
+</html>
